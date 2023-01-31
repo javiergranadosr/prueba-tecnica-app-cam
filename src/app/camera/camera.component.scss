@@ -1,0 +1,110 @@
+/*
+  320px — 480px: Mobile devices
+• 481px — 768px: iPads, Tablets
+• 769px — 1024px: Small screens, laptops
+• 1025px — 1200px: Desktops, large screens
+• 1201px and more — Extra large screens, TV
+*/
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  .card {
+    width: 95%;
+    border: none !important;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        display: none;
+      }
+
+      p,
+      span {
+        text-align: center;
+        color: #2d2c3a;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      span {
+        font-size: 12px;
+      }
+      .placeholder {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        background-color: #bcbcbc;
+      }
+      button {
+        border: none;
+        border-radius: 20px;
+        background-color: #2196f3;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+      }
+    }
+
+    .card-footer {
+      background-color: #e9eef4;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      button {
+        border: none;
+        background-color: #096299;
+        line-height: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        svg {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// min-width 480px Mobile devices
+
+// iPads, Tablets
+@media (min-width: 768px) {
+  .card {
+    width: 60% !important;
+  }
+}
+
+// Small screens, laptops
+@media (min-width: 1024px) {
+  .card {
+    width: 40% !important;
+  }
+}
+
+// Desktops, large screens
+@media (min-width: 1200px) {
+}
+
+// Extra large screens, TV
+@media (min-width: 1201px) {
+}
